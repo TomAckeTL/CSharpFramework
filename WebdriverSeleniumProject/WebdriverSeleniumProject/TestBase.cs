@@ -17,6 +17,7 @@ using WebdriverSeleniumProject.UserActions;
 using OpenQA.Selenium.Safari;
 using System.Threading;
 using WebdriverSeleniumProject.Tests.Stability_Tests;
+using WebdriverSeleniumProject.Globals;
 
 namespace WebdriverSeleniumProject
 {
@@ -28,17 +29,18 @@ namespace WebdriverSeleniumProject
     // [TestFixture(typeof(SafariDriver))]
     public class TestBase<TWebDriver> where TWebDriver : IWebDriver, new()
     {
-        private IWebDriver driver;
+        //private IWebDriver driver;
         private RemoteWebDriverProperties prop = new RemoteWebDriverProperties();
         private Pages pages = new Pages();
+        private GlobalVars driver = new GlobalVars();
 
 
 
         [SetUp]
         public void Init()
         {
-            driver = prop.Initialize(typeof(TWebDriver));
-            driver.Manage().Window.Maximize();
+            driver.GlobalDriver = prop.Initialize(typeof(TWebDriver));
+            driver.GlobalDriver.Manage().Window.Maximize();
         }
 
         [Test]
@@ -46,9 +48,9 @@ namespace WebdriverSeleniumProject
         {
             LogInStability logon = new LogInStability();
 
-            pages.home.Navigate(driver);
+            pages.home.Navigate(driver.GlobalDriver);
 
-            logon.LogOnRepeat(driver);
+            logon.LogOnRepeat(driver.GlobalDriver);
 
             Thread.Sleep(2000);
         }
@@ -58,9 +60,9 @@ namespace WebdriverSeleniumProject
         {
             if (driver != null)
             {
-                driver.Close();
-                driver.Quit();
-                driver.Dispose();
+                driver.GlobalDriver.Close();
+                driver.GlobalDriver.Quit();
+                driver.GlobalDriver.Dispose();
             }
         }
 

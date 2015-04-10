@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Globals\GlobalVars.cs" />
     <Compile Include="HelperClasses\Data.cs" />
     <Compile Include="HelperClasses\SeleniumCommands.cs" />
     <Compile Include="Navigation\Pages\HomePage.cs" />

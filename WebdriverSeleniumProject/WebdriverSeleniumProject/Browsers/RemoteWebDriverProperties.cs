@@ -10,13 +10,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WebdriverSeleniumProject.Globals;
 
 namespace WebdriverSeleniumProject
 {
     class RemoteWebDriverProperties
     {
-        private IWebDriver driver;
+        //private IWebDriver driver;
         private string URI = "http://10.154.1.49:4444/wd/hub";
+        private GlobalVars driver = new GlobalVars();
         public RemoteWebDriverProperties() { }
 
 
@@ -28,25 +30,25 @@ namespace WebdriverSeleniumProject
                 DesiredCapabilities dc = new DesiredCapabilities();
                 dc = DesiredCapabilities.InternetExplorer();
                 dc.SetCapability(CapabilityType.BrowserName, "iexplore");
-                driver = new RemoteWebDriver(new Uri(URI), dc);
+                driver.GlobalDriver = new RemoteWebDriver(new Uri(URI), dc);
             }
             if (type == typeof(ChromeDriver))
             {
-                driver = new RemoteWebDriver(new Uri(URI), DesiredCapabilities.Chrome());
+                driver.GlobalDriver = new RemoteWebDriver(new Uri(URI), DesiredCapabilities.Chrome());
             }
             if (type == typeof(FirefoxDriver))
             {
-                driver = new RemoteWebDriver(new Uri(URI), DesiredCapabilities.Firefox());
+                driver.GlobalDriver = new RemoteWebDriver(new Uri(URI), DesiredCapabilities.Firefox());
             }
             if (type == typeof(OperaDriver))
             {
-                driver = new RemoteWebDriver(new Uri(URI), DesiredCapabilities.Opera());
+                driver.GlobalDriver = new RemoteWebDriver(new Uri(URI), DesiredCapabilities.Opera());
             }
             if (type == typeof(SafariDriver))
             {
-                driver = new RemoteWebDriver(new Uri(URI), DesiredCapabilities.Safari());
+                driver.GlobalDriver = new RemoteWebDriver(new Uri(URI), DesiredCapabilities.Safari());
             }
-            return driver;
+            return driver.GlobalDriver;
         }
     }
 }

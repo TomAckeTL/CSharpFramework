@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\bin\Debug\WebdriverSeleniumProject.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-04-10" time="14:21:15">
-  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="PC002" user="testing" user-domain="PC002" />
+<test-results name="C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\bin\Debug\WebdriverSeleniumProject.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-04-10" time="15:13:01">
+  <environment nunit-version="2.6.4.14350" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.4\bin" machine-name="PC359" user="testing" user-domain="PC359" />
   <culture-info current-culture="nl-BE" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\bin\Debug\WebdriverSeleniumProject.dll" executed="True" result="Success" success="True" time="63.575" asserts="0">
+  <test-suite type="Assembly" name="C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\bin\Debug\WebdriverSeleniumProject.dll" executed="True" result="Success" success="True" time="60.473" asserts="0">
     <results>
-      <test-suite type="Namespace" name="WebdriverSeleniumProject" executed="True" result="Success" success="True" time="63.556" asserts="0">
+      <test-suite type="Namespace" name="WebdriverSeleniumProject" executed="True" result="Success" success="True" time="60.461" asserts="0">
         <results>
-          <test-suite type="GenericFixture" name="TestBase&lt;TWebDriver&gt;" executed="True" result="Success" success="True" time="63.556" asserts="0">
+          <test-suite type="GenericFixture" name="TestBase&lt;TWebDriver&gt;" executed="True" result="Success" success="True" time="60.461" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="TestBase&lt;FirefoxDriver&gt;" executed="True" result="Success" success="True" time="63.553" asserts="0">
+              <test-suite type="TestFixture" name="TestBase&lt;FirefoxDriver&gt;" executed="True" result="Success" success="True" time="60.458" asserts="0">
                 <results>
-                  <test-case name="WebdriverSeleniumProject.TestBase&lt;FirefoxDriver&gt;.LogInStability" executed="True" result="Success" success="True" time="63.218" asserts="0" />
+                  <test-case name="WebdriverSeleniumProject.TestBase&lt;FirefoxDriver&gt;.LogInStability" executed="True" result="Success" success="True" time="60.057" asserts="0" />
                 </results>
               </test-suite>
             </results>
