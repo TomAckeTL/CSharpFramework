@@ -71,6 +71,7 @@
     <Compile Include="Tests\UserActions\RegistrateNewUser.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="HelperClasses\SeleniumCommands.rtf" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
