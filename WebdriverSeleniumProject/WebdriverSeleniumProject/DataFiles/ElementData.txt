@@ -1,0 +1,7 @@
+﻿
+username_field:name
+password_field:pass
+login_submit_button:none
+age_submit_button:modalSubmit
+purchase_submit_button:none
+homepage_link:Wines

@@ -1,0 +1,6 @@
+﻿
+WsTester1,password
+HRTester1,password
+Admin,password
+CHRTester1,password
+CWsTester1,password
