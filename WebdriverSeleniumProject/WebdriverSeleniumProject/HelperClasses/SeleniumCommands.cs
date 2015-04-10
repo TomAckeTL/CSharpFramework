@@ -15,11 +15,35 @@ namespace WebdriverSeleniumProject.HelperClasses
         private Data data = new Data();
 
 
+        public SeleniumCommands()
+        {
+
+
+        }
 
         public SeleniumCommands(IWebDriver driver)
         {
             this.driver = driver;
 
         }
+
+        public void EnterCredential(string field, string keys)
+        {
+            IWebElement tbox = driver.FindElement(By.Id(data.gen(field)));
+            tbox.Clear();
+            tbox.SendKeys(keys);
+        }
+
+        public void SubmitCredential(string field)
+        {
+            IWebElement tbox = driver.FindElement(By.Id(data.gen(field)));
+            tbox.Submit();
+        }
+
+
+
+
+
+
     }
 }

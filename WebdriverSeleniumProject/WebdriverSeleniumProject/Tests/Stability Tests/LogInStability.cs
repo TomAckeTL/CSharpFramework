@@ -16,34 +16,30 @@ namespace WebdriverSeleniumProject.Tests.Stability_Tests
         private IWebDriver driver;
         private int i = 0;
         private Data data = new Data();
+        private SeleniumCommands commander;
 
 
         public LogInStability() {}
 
         public void LogOnRepeat(IWebDriver MainDriver)
         {
-            SeleniumCommands check = new SeleniumCommands(driver);
+            commander = new SeleniumCommands(MainDriver);
             for (int k = i; k < data.counter; k++)
             //foreach (string l in Users)
             {
                 driver = MainDriver;
-                IWebElement userName;
-                IWebElement userPassword;
+                //IWebElement userName;
+                //IWebElement userPassword;
                 try
                 {
                     //This 'for' loop makes sure the login page is fully loaded before searching the user name
                     WaitForElement("username_field");
                     //Thread.Sleep(5000);
 
-                    userName = driver.FindElement(By.Id(data.gen("username_field")));  //
-                    userName.Clear();
-                    userName.SendKeys(data.Users[i]);
+                    commander.EnterCredential("username_field", data.Users[i]);
                     //Find the Password input field and fill in the password
-                    userPassword = driver.FindElement(By.Id(data.gen("password_field")));
-                    userPassword.Clear();
-                    userPassword.SendKeys(data.Passwords[i]);
-
-                    userPassword.Submit();
+                    commander.EnterCredential("password_field", data.Passwords[i]);
+                    commander.SubmitCredential("password_field");
                     Thread.Sleep(3000);
 
                     try

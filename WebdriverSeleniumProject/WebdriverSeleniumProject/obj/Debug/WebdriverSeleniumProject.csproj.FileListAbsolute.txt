@@ -44,3 +44,11 @@ C:\Users\testing\Documents\GitHub\Selenium\CSharpFramework\WebdriverSeleniumProj
 C:\Users\testing\Documents\GitHub\Selenium\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\bin\Debug\nunit.framework.xml
 C:\Users\testing\Documents\GitHub\Selenium\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\obj\Debug\WebdriverSeleniumProject.dll
 C:\Users\testing\Documents\GitHub\Selenium\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\obj\Debug\WebdriverSeleniumProject.pdb
+C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\bin\Debug\WebdriverSeleniumProject.dll
+C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\bin\Debug\WebdriverSeleniumProject.pdb
+C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\bin\Debug\nunit.framework.dll
+C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\bin\Debug\nunit.mocks.dll
+C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\bin\Debug\nunit.framework.xml
+C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\obj\Debug\WebdriverSeleniumProject.csprojResolveAssemblyReference.cache
+C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\obj\Debug\WebdriverSeleniumProject.dll
+C:\Users\testing\Documents\GitHub\CSharpFramework\WebdriverSeleniumProject\WebdriverSeleniumProject\obj\Debug\WebdriverSeleniumProject.pdb
