@@ -20,8 +20,8 @@ namespace WebdriverSeleniumProject.HelperClasses
 
         public Data()
         {
-            ReadCredentials(@"DataFiles\LoginData.txt");  //Laadt de credentials in in 2 Lists(UserNames, UserPasswords)
-            ReadElements(@"DataFiles\ElementData.txt"); //Laadt Elementen en hun ID in in 2 Lists(Elements, ElementValues)
+            ReadCredentials(@"DataFiles\LoginData.txt");  //Laad de credentials in in 2 Lists(UserNames, UserPasswords)
+            ReadElements(@"DataFiles\ElementData.txt"); //Laad Elementen en hun ID in in 2 Lists(Elements, ElementValues)
         }
 
         public string gen(string element)

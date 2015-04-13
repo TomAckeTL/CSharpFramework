@@ -17,7 +17,7 @@ namespace WebdriverSeleniumProject
     class RemoteWebDriverProperties
     {
         //private IWebDriver driver;
-        private string URI = "http://10.154.1.49:4444/wd/hub";
+        private string URI = "http://10.154.1.49:4444/wd/hub"; //Server-IP
         private GlobalVars driver = new GlobalVars();
         public RemoteWebDriverProperties() { }
 
