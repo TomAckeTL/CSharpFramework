@@ -23,10 +23,10 @@ namespace WebdriverSeleniumProject
 {
 
     [TestFixture(typeof(FirefoxDriver))]
-    //[TestFixture(typeof(ChromeDriver))]
-    //[TestFixture(typeof(InternetExplorerDriver))]
-    // [TestFixture(typeof(OperaDriver))]
-    // [TestFixture(typeof(SafariDriver))]
+    [TestFixture(typeof(ChromeDriver))]
+    [TestFixture(typeof(InternetExplorerDriver))]
+    //[TestFixture(typeof(OperaDriver))]
+    //[TestFixture(typeof(SafariDriver))]
     public class TestBase<TWebDriver> where TWebDriver : IWebDriver, new()
     {
         //private IWebDriver driver;
